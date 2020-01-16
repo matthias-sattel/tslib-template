@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/msattel/tslib-template/issues"
   },
-  "homepage": "https://github.com/msattel/tslib-template#readme"
+  "homepage": "https://github.com/msattel/tslib-template#readme",
+  "devDependencies": {
+    "typescript": "^3.7.4"
+  }
 }
