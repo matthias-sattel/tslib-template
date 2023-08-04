@@ -1,12 +1,10 @@
 {
-  "name": "my_ts_lib",
+  "name": "ts_lib",
   "version": "1.0.0",
   "description": "This is a TS lib",
   "main": "build/main/index.js",
   "typings": "build/main/index.d.ts",
   "module": "build/module/index.js",
-  "repository": "https://github.com/YOUR_GITHUB_USER_NAME/my_ts_lib",
-  "license": "MIT",
   "keywords": [],
   "scripts": {
     "build": "run-p build:*",
