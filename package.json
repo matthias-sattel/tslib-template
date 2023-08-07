@@ -33,12 +33,12 @@
     "doc:json": "typedoc src/ --exclude **/*.spec.ts --target ES6 --mode file --json build/docs/typedoc.json",
     "version": "standard-version",
     "reset-hard": "git clean -dfx && git reset --hard && npm i",
-    "prepare-release": "run-s reset-hard test cov:check doc:html version doc:publish"
+    "prepare-release": "run-s reset-hard test cov:check doc:html version doc:publish",
+    "commit": "cz"
   },
   "engines": {
     "node": ">=10"
   },
-  "dependencies": {},
   "devDependencies": {
     "@ava/typescript": "^4.1.0",
     "@istanbuljs/nyc-config-typescript": "^1.0.2",
@@ -46,6 +46,7 @@
     "@typescript-eslint/parser": "^6.2.1",
     "ava": "^5.3.1",
     "codecov": "^3.8.2",
+    "commitizen": "^4.3.0",
     "cspell": "^6.31.2",
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.46.0",
@@ -77,7 +78,8 @@
     "typescript": {
       "rewritePaths": {
         "src/": "build/main/"
-      }
+      },
+      "compile": false
     },
     "files": [
       "!build/module/**"
